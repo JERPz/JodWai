@@ -1,0 +1,5 @@
+streamlit
+streamlit-option-menu
+mysql-connector-python
+st-pages
+plotly
