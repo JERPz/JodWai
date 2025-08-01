@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  jodwai_db:
+    image: postgres:15
+    container_name: jodwai_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: rootpass
+      POSTGRES_DB: jodwai
+    ports:
+      - "5432:5432"
+    volumes:
+      - jodwai_pgdata:/var/lib/postgresql/data
+      - ./initdb:/docker-entrypoint-initdb.d
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: jodwai_pgadmin
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@jodwai.com
+      PGADMIN_DEFAULT_PASSWORD: adminpass
+    ports:
+      - "5050:80"
+    depends_on:
+      - jodwai_db
+
+volumes:
+  jodwai_pgdata:
