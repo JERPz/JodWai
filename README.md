@@ -1,4 +1,3 @@
-````markdown
 # JodWai - Personal Finance & Mood Tracker App
 
 A web application for tracking income, expenses, and personal mood using Streamlit and PostgreSQL.
