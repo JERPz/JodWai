@@ -59,22 +59,6 @@ run_setup.bat
 
 ---
 
-### 3. Run the Streamlit Application
-
-#### On macOS/Linux:
-
-```bash
-./run_run.sh
-```
-
-#### On Windows:
-
-```bat
-run_run.bat
-```
-
----
-
 ## Database
 
 * `account` table for user information
