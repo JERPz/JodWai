@@ -80,18 +80,3 @@ Tables are created automatically from the SQL scripts located in the `initdb` fo
 
 ---
 
-## Notes
-
-* Update the database connection settings in `app.py` if needed (host, port, user, password)
-* Make sure the Docker ports specified in `docker-compose.yml` are available and accessible
-* The app uses a Thai Sentiment Analysis model from HuggingFace: `poom-sci/WangchanBERTa-finetuned-sentiment`
-
----
-
-## Contact
-
-If you have any questions or issues, feel free to contact \[Your Email] or open an issue on GitHub.
-
----
-
-Thank you for using JodWai! 🙏
